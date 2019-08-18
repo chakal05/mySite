@@ -146,8 +146,11 @@
        </div>
 
     <div class='mission'>
-        <h1>la CJED </h1>
+
+    <h1>la CJED </h1>
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt enim beatae distinctio molestias cupiditate itaque, odio modi repellendus totam labore, rem unde. Porro eos assumenda quibusdam deserunt, magni architecto iusto.</p>
+       
+
         <div class="goal">
             <h3>Mission</h3>
             <p>Notre mission est de connecter, inspirer et supporter les entrepreneurs pour 
@@ -159,18 +162,28 @@
         <div class="vision">
         <h3>Vision </h3>
             <p>Notre cible est de devenir le leader dans le secteur de l'entreprise chez les jeunes.
-                <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quod voluptatem, repudiandae laboriosam architecto similique ut unde illo quos! Voluptates vel soluta commodi inventore odit blanditiis ipsum numquam accusantium officiis?
+                <br> Lorem ipsum, dolor sit elit. Accusamus qui voulair quod voluptatem, repudiandae laboriosam architecto similique ut unde illo quos! Voluptates vel soluta commodi inventore odit blanditiis ipsum numquam accusantium officiis?
             </p>
         </div>
 
         <div class="valeur">
         <h3>Valeur </h3>
             <p>La CJED a pour devise : responsabilité, compétitivité, intégrité, communauté.
-                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut perferendis, quia quisquam, illo veritatis rerum maiores nobis inventore magni et dolorem itaque assumenda possimus quaerat distinctio! Hic officiis illo incidunt! </p>
+                <br> Lorem ipsum dolor sit amet la rose forst  marginw consectetur pour le display adipisicing elit. Ut perferendis, quia quisquam, illo veritatis rerum maiores nobis inventore magni et dolorem itaque assumenda possimus quaerat distinctio! Hic officiis illo incidunt! </p>
         </div>
     <button class='btnMore'> En savoir plus ... </button>
     </div>
 
+
+    <div class="white">
+      <img src="../images/fd.jpg" alt="">
+
+      <div class="wtText">
+        <h4>lorem ipsum</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi error minima quia. Itaque nulla sit, iusto ipsam consequatur beatae quibusdam, explicabo voluptatum doloremque voluptates quos unde sunt dignissimos quas sapiente?</p>
+    <button> Contactez-nous </button>  
+    </div>
+    </div>
 
 
     <div class='members'>
@@ -202,7 +215,7 @@
         </div>
         <div class="details">
               <div class="content">
-              <h5>Mohamed Guirreh Galab</h5>
+              <h5>Lorem ipsum venum </h5>
               <p>Vice-président du Club </p>
 
               <div class="icons">
@@ -219,13 +232,14 @@
           </div>
     </div>
 
+
     <div class='membPic'>
         <div class="imgBox">
         <img src="../images/jh.jpg" alt="">
         </div>
         <div class="details">
               <div class="content">
-              <h5>Mohamed Guirreh Galab</h5>
+              <h5>Venum citreaus solum </h5>
               <p>Sécretaire générale du Club </p>
 
               <div class="icons">

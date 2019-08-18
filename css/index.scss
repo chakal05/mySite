@@ -309,15 +309,25 @@ html {
     }
   }
 
+  
+
   .mission {
     margin-top: 5rem;
     background-color: #f1f1f1;
     text-align: center;
 
+    @include ipad {
+      text-align: left;
+    }
+
     h1 {
-      padding-top: 1rem;
       font-size: 57px;
+      padding-top: 1rem;
       font-family: $font2;
+
+      @include ipad {
+        text-align: center;
+      }
     }
 
     p {
@@ -326,6 +336,11 @@ html {
       padding: 1rem;
       width: 80%;
       margin: auto;
+
+      @include ipad {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
     }
 
     .vision,
@@ -333,8 +348,15 @@ html {
     .goal {
       width: 80%;
       margin: auto;
-      padding: 0.5rem;
       padding: 1rem;
+
+      @include ipad {
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+        margin-left: 0.9rem;
+        margin-bottom: 2rem;
+      }
 
       h3 {
         background-color: $primary;
@@ -350,17 +372,84 @@ html {
       p {
         width: 270px;
         padding: 1rem;
+
+        @include ipad {
+          width: 170px;
+        }
       }
+    }
+
+    .vision:hover,
+    .valeur:hover,
+    .goal:hover {
+      background-color: rgb(233, 233, 233);
+      border-radius: 1px;
     }
 
     .btnMore {
       background-color: $primary;
       color: #fff;
       padding: 0.5rem;
-      margin-bottom: 2rem;
+      margin: 3rem auto;
       font-family: $font2;
+
+      @include ipad {
+        position: relative;
+        left: 43%;
+      }
     }
   }
+
+  .white {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    position: relative;
+
+    @include ipad {
+      height: 500px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .wtText {
+      position: absolute;
+      top: 2.5rem;
+      background-color: rgb(255, 255, 255);
+      font-size: 13px;
+      text-align: center;
+      height: 310px;
+      padding: 3rem;
+      padding-top: 3rem;
+
+      h4{
+
+        @include ipad {
+          margin-bottom: 2rem;
+        }
+      }
+      @include ipad{
+        width: 90%;
+        margin: 0 auto;
+        top: 7rem;
+        left: 3rem;
+      }
+     
+
+      button {
+        padding: 1rem;
+        background-color: $primary;
+        color: #fff;
+        margin: 1rem;
+      }
+    }
+  }
+
 
   .members {
     text-align: center;
@@ -372,14 +461,24 @@ html {
       margin: 2rem auto;
       position: relative;
 
+      @include ipad {
+        width: 230px;
+        display: inline-block;
+      }
+
       .imgBox {
         position: relative;
         overflow: hidden;
         max-height: 401px;
         margin: 0 auto;
 
+        @include ipad {
+          max-height: 450px;
+        }
+
         img {
           width: 100%;
+          height: 401px;
           transition: transform 2s;
         }
       }
@@ -421,6 +520,11 @@ html {
               width: 25px;
               height: 25px;
               margin: 1rem;
+
+              @include ipad {
+                margin: 0.3rem;
+                margin-top: 3rem;
+              }
             }
           }
         }
