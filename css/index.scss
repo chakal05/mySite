@@ -117,7 +117,7 @@ html {
       @include ipad {
         display: inline-block;
         margin-right: 0.7rem;
-        margin-left: .7rem;
+        margin-left: 0.7rem;
       }
 
       img {
@@ -195,35 +195,54 @@ html {
 
       .tex {
         background-color: $second;
-        padding: 2rem;
+        padding: 1rem;
         margin: 3rem auto;
+
+        @include ipad {
+          height: 400px;
+          padding-top: 5.5rem;
+        }
+
+        h4 {
+          font-size: 29px;
+          padding: 1rem;
+          font-family: $font2;
+          color: $primary;
+
+          @include ipad {
+            font-size: 33px;
+          }
+        }
+
+        p {
+          margin-top: -1rem;
+          width: 70%;
+          margin: auto;
+          font-family: $font1;
+          font-size: 13px;
+        }
+
+        .f1 {
+          width: 300px;
+          margin: auto;
+          font-family: $font2;
+          font-size: 25px;
+
+          @include ipad {
+            font-size: 27px;
+          }
+        }
       }
+
       img {
         width: 300px;
         height: 200px;
         margin: 3rem auto;
-      }
 
-      h4 {
-        font-size: 29px;
-        padding: 1rem;
-        font-family: $font2;
-        color: $primary;
-      }
-
-      p {
-        margin-top: -1rem;
-        width: 70%;
-        margin: auto;
-        font-family: $font1;
-        font-size: 13px;
-      }
-
-      .f1 {
-        width: 300px;
-        margin: auto;
-        font-family: $font2;
-        font-size: 25px;
+        @include ipad {
+          width: 400px;
+          height: 300px;
+        }
       }
     }
 
@@ -232,17 +251,24 @@ html {
       margin: auto;
       margin-top: 2rem;
 
-
       h3 {
         width: 90%;
         margin: 0 auto;
         font-family: $font2;
+
+        @include ipad {
+          font-size: 33px;
+        }
       }
 
       h5 {
         width: 90%;
         margin: 1rem auto;
         font-family: $font2;
+
+        @include ipad {
+          font-size: 29px;
+        }
       }
 
       p {
@@ -261,7 +287,7 @@ html {
         position: relative;
         top: 1.4rem;
         font-family: $font2;
-        margin-left: 1rem;
+        margin-left: 2rem;
       }
 
       .progress {
@@ -269,6 +295,10 @@ html {
         height: 9px;
         border-radius: 0;
         margin-left: 7rem;
+
+        @include ipad {
+          margin-left: 11rem;
+        }
       }
 
       .boxen {
@@ -305,9 +335,8 @@ html {
       margin: auto;
       padding: 0.5rem;
       padding: 1rem;
-    
 
-      h3{
+      h3 {
         background-color: $primary;
         color: #fff;
         width: 80px;
@@ -318,7 +347,7 @@ html {
         margin: 1rem auto;
       }
 
-      p{
+      p {
         width: 270px;
         padding: 1rem;
       }

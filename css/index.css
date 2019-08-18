@@ -121,7 +121,7 @@ html {
   .main .trois .imgLine {
     display: inline-block;
     margin-right: 0.7rem;
-    margin-left: .7rem;
+    margin-left: 0.7rem;
   }
 }
 
@@ -211,8 +211,49 @@ html {
 
 .main .pres .presTop .tex {
   background-color: #f1f1f1;
-  padding: 2rem;
+  padding: 1rem;
   margin: 3rem auto;
+}
+
+@media (min-width: 768px) {
+  .main .pres .presTop .tex {
+    height: 400px;
+    padding-top: 5.5rem;
+  }
+}
+
+.main .pres .presTop .tex h4 {
+  font-size: 29px;
+  padding: 1rem;
+  font-family: "Grenze", serif;
+  color: #1b1b1b;
+}
+
+@media (min-width: 768px) {
+  .main .pres .presTop .tex h4 {
+    font-size: 33px;
+  }
+}
+
+.main .pres .presTop .tex p {
+  margin-top: -1rem;
+  width: 70%;
+  margin: auto;
+  font-family: "Cutive Mono", monospace;
+  font-size: 13px;
+}
+
+.main .pres .presTop .tex .f1 {
+  width: 300px;
+  margin: auto;
+  font-family: "Grenze", serif;
+  font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  .main .pres .presTop .tex .f1 {
+    font-size: 27px;
+  }
 }
 
 .main .pres .presTop img {
@@ -221,26 +262,11 @@ html {
   margin: 3rem auto;
 }
 
-.main .pres .presTop h4 {
-  font-size: 29px;
-  padding: 1rem;
-  font-family: "Grenze", serif;
-  color: #1b1b1b;
-}
-
-.main .pres .presTop p {
-  margin-top: -1rem;
-  width: 70%;
-  margin: auto;
-  font-family: "Cutive Mono", monospace;
-  font-size: 13px;
-}
-
-.main .pres .presTop .f1 {
-  width: 300px;
-  margin: auto;
-  font-family: "Grenze", serif;
-  font-size: 25px;
+@media (min-width: 768px) {
+  .main .pres .presTop img {
+    width: 400px;
+    height: 300px;
+  }
 }
 
 .main .pres .etor {
@@ -255,10 +281,22 @@ html {
   font-family: "Grenze", serif;
 }
 
+@media (min-width: 768px) {
+  .main .pres .etor h3 {
+    font-size: 33px;
+  }
+}
+
 .main .pres .etor h5 {
   width: 90%;
   margin: 1rem auto;
   font-family: "Grenze", serif;
+}
+
+@media (min-width: 768px) {
+  .main .pres .etor h5 {
+    font-size: 29px;
+  }
 }
 
 .main .pres .etor p {
@@ -277,7 +315,7 @@ html {
   position: relative;
   top: 1.4rem;
   font-family: "Grenze", serif;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .main .pres .boxProgress .progress {
@@ -285,6 +323,12 @@ html {
   height: 9px;
   border-radius: 0;
   margin-left: 7rem;
+}
+
+@media (min-width: 768px) {
+  .main .pres .boxProgress .progress {
+    margin-left: 11rem;
+  }
 }
 
 .main .pres .boxProgress .boxen .progress-bar {
