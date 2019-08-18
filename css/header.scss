@@ -1,0 +1,49 @@
+
+$ipad : 768px;
+
+@mixin ipad {
+    @media (min-width: 768px) {
+       @content;
+    }
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+
+    .navbar{
+        background-color: #fff;
+
+        @include ipad{
+            .navbar .navbar-brand {float:none;display: inline-block;}
+            .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
+            .navbar .navbar-nav {float:none !important;}
+            .nav-item{width:100%;text-align:left;} 
+            .navbar-toggler {display: block !important;}
+            .navbar-toggleable-sm.collapse {display:none !important}
+            .navbar-toggleable-sm.collapse.in {display:block !important}
+        }
+    }
+
+
+  .navbar-toggler:focus,
+  .navbar-toggler:hover{
+      outline: none;
+      border-color: gainsboro;
+  }
+
+
+.nav-link{
+    color: rgb(8, 3, 68);
+}
+}
