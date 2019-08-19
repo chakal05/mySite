@@ -50,8 +50,8 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
-          </ul>
-          <button class='btn btn-info'> Adhèrer </button>
+            </ul>
+            <button class='btn '> Adhèrer </button>
         </div>
       </nav>
     </div>

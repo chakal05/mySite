@@ -35,7 +35,6 @@
             <div class='purple'></div>
             <h1 >01</h1>
             <h4>Autonomiser</h4>
-
             <p>Lorem ipsums quam accusantium sint, lsd ki be alain aut, i so fall denna agend a ser vi som consequatur asperiores nihil hic necessitatibus quis similique fugiat veritatis nesciunt cumque vel itaque omnis! Nesciunt, iure numquam!</p>
         </div>
         <div class='imgLine'>
@@ -148,7 +147,9 @@
     <div class='mission'>
 
     <h1>la CJED </h1>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt enim beatae distinctio molestias cupiditate itaque, odio modi repellendus totam labore, rem unde. Porro eos assumenda quibusdam deserunt, magni architecto iusto.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt enim beatae distinctio molestias cupiditate itaque, odio modi repellendus totam labore, rem unde. Porro eos assumenda quibusdam deserunt, magni architecto iusto.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non maiores fugiat, nobis distinctio doloremque deleniti corporis repellat eius aspernatur libero iure nam voluptatem sed consequuntur at odio minima nulla explicabo.
+       </p>
        
 
         <div class="goal">
@@ -187,7 +188,7 @@
 
 
     <div class='members'>
-    
+      <h1>La direction du Club</h1>
     <div class='membPic'>
             <div class="imgBox">
             <img src="../images/m2g.jpg" alt="">
@@ -256,7 +257,9 @@
           </div>
     </div>
 
+    <div class="button">
     <button> Rejoinniez-nous  </button>
+    </div>
     </div>
    
     </div>

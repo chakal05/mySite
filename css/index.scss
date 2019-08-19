@@ -12,6 +12,17 @@ $ipad: 768px;
   }
 }
 
+@mixin desktop {
+  @media (min-width: 991px) {
+    @content;
+  }
+}
+
+@mixin bigScreen {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
 body,
 html {
   width: 100%;
@@ -56,6 +67,10 @@ html {
         @include ipad {
           font-size: 195px;
         }
+
+        @include bigScreen {
+          font-size: 245px;
+        }
       }
       p {
         font-size: 25px;
@@ -63,6 +78,10 @@ html {
 
         @include ipad {
           font-size: 27px;
+        }
+
+        @include bigScreen {
+          font-size: 35px;
         }
       }
 
@@ -130,6 +149,16 @@ html {
           width: 180px;
           height: 200px;
         }
+
+        @include desktop {
+          width: 250px;
+          height: 270px;
+        }
+
+        @include bigScreen {
+          width: 320px;
+          height: 280px;
+        }
       }
 
       .purple,
@@ -141,7 +170,11 @@ html {
         margin: 0 auto;
 
         @include ipad {
-          width: 170px;
+          width: 150px;
+        }
+
+        @include desktop {
+          width: 200px;
         }
       }
 
@@ -212,6 +245,10 @@ html {
           @include ipad {
             font-size: 33px;
           }
+
+          @include desktop {
+            font-size: 39px;
+          }
         }
 
         p {
@@ -220,6 +257,10 @@ html {
           margin: auto;
           font-family: $font1;
           font-size: 13px;
+
+          @include desktop {
+            font-size: 15px;
+          }
         }
 
         .f1 {
@@ -230,6 +271,10 @@ html {
 
           @include ipad {
             font-size: 27px;
+          }
+
+          @include desktop {
+            font-size: 31px;
           }
         }
       }
@@ -243,6 +288,11 @@ html {
           width: 400px;
           height: 300px;
         }
+
+        @include desktop {
+          width: 800px;
+          height: 500px;
+        }
       }
     }
 
@@ -251,6 +301,11 @@ html {
       margin: auto;
       margin-top: 2rem;
 
+      @include bigScreen {
+        position: relative;
+        left: 7rem;
+      }
+
       h3 {
         width: 90%;
         margin: 0 auto;
@@ -258,6 +313,10 @@ html {
 
         @include ipad {
           font-size: 33px;
+        }
+
+        @include desktop {
+          font-size: 39px;
         }
       }
 
@@ -269,12 +328,20 @@ html {
         @include ipad {
           font-size: 29px;
         }
+
+        @include desktop {
+          font-size: 31px;
+        }
       }
 
       p {
         width: 90%;
         margin: 1rem auto;
         font-size: 13px;
+
+        @include desktop {
+          font-size: 15px;
+        }
       }
     }
 
@@ -288,6 +355,16 @@ html {
         top: 1.4rem;
         font-family: $font2;
         margin-left: 2rem;
+
+        @include desktop {
+          font-size: 23px;
+          margin-left: 3rem;
+          top: 1.47rem;
+        }
+
+        @include bigScreen {
+          margin-left: 13rem;
+        }
       }
 
       .progress {
@@ -299,6 +376,16 @@ html {
         @include ipad {
           margin-left: 11rem;
         }
+
+        @include desktop {
+          width: 70%;
+          margin-left: 14rem;
+        }
+
+        @include bigScreen {
+          width: 60%;
+          margin-left: 23rem;
+        }
       }
 
       .boxen {
@@ -309,8 +396,6 @@ html {
     }
   }
 
-  
-
   .mission {
     margin-top: 5rem;
     background-color: #f1f1f1;
@@ -318,6 +403,10 @@ html {
 
     @include ipad {
       text-align: left;
+    }
+
+    @include desktop {
+      text-align: center;
     }
 
     h1 {
@@ -341,6 +430,10 @@ html {
         text-align: center;
         margin-bottom: 2rem;
       }
+
+      @include bigScreen {
+        text-align: center;
+      }
     }
 
     .vision,
@@ -356,6 +449,11 @@ html {
         text-align: center;
         margin-left: 0.9rem;
         margin-bottom: 2rem;
+
+        @include desktop {
+          padding: 0;
+          margin-left: 1.3rem;
+        }
       }
 
       h3 {
@@ -375,6 +473,11 @@ html {
 
         @include ipad {
           width: 170px;
+        }
+
+        @include desktop {
+          padding: 0;
+          width: 60%;
         }
       }
     }
@@ -397,6 +500,11 @@ html {
         position: relative;
         left: 43%;
       }
+
+      @include desktop {
+        position: static;
+        left: 0;
+      }
     }
   }
 
@@ -410,6 +518,15 @@ html {
 
     @include ipad {
       height: 500px;
+      width: 90%;
+    }
+
+    @include desktop {
+      width: 80%;
+    }
+
+    @include bigScreen {
+      width: 60%;
     }
 
     img {
@@ -427,19 +544,18 @@ html {
       padding: 3rem;
       padding-top: 3rem;
 
-      h4{
-
+      h4 {
         @include ipad {
           margin-bottom: 2rem;
         }
       }
-      @include ipad{
+
+      @include ipad {
         width: 90%;
         margin: 0 auto;
         top: 7rem;
         left: 3rem;
       }
-     
 
       button {
         padding: 1rem;
@@ -450,12 +566,15 @@ html {
     }
   }
 
-
   .members {
     text-align: center;
     padding: 1rem;
     margin: 1rem auto;
 
+    h1 {
+      font-family: $font2;
+      margin-bottom: 2rem;
+    }
     .membPic {
       width: 300px;
       margin: 2rem auto;
@@ -464,6 +583,15 @@ html {
       @include ipad {
         width: 230px;
         display: inline-block;
+      }
+
+      @include desktop {
+        width: 271px;
+        margin-right: 1.5rem;
+      }
+
+      @include bigScreen {
+        width: 300px;
       }
 
       .imgBox {
@@ -546,6 +674,12 @@ html {
       padding: 0.5rem;
       outline: none;
       margin-top: 1rem;
+    }
+
+    .button {
+      @include ipad {
+        width: 100%;
+      }
     }
   }
 }

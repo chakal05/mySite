@@ -54,6 +54,12 @@ html {
   }
 }
 
+@media (min-width: 1500px) {
+  .main .picPub .text h1 {
+    font-size: 245px;
+  }
+}
+
 .main .picPub .text p {
   font-size: 25px;
   margin-bottom: 2rem;
@@ -62,6 +68,12 @@ html {
 @media (min-width: 768px) {
   .main .picPub .text p {
     font-size: 27px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .main .picPub .text p {
+    font-size: 35px;
   }
 }
 
@@ -139,6 +151,20 @@ html {
   }
 }
 
+@media (min-width: 991px) {
+  .main .trois .imgLine img {
+    width: 250px;
+    height: 270px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .main .trois .imgLine img {
+    width: 320px;
+    height: 280px;
+  }
+}
+
 .main .trois .imgLine .purple,
 .main .trois .imgLine .beige,
 .main .trois .imgLine .gris {
@@ -152,7 +178,15 @@ html {
   .main .trois .imgLine .purple,
   .main .trois .imgLine .beige,
   .main .trois .imgLine .gris {
-    width: 170px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 991px) {
+  .main .trois .imgLine .purple,
+  .main .trois .imgLine .beige,
+  .main .trois .imgLine .gris {
+    width: 200px;
   }
 }
 
@@ -235,12 +269,24 @@ html {
   }
 }
 
+@media (min-width: 991px) {
+  .main .pres .presTop .tex h4 {
+    font-size: 39px;
+  }
+}
+
 .main .pres .presTop .tex p {
   margin-top: -1rem;
   width: 70%;
   margin: auto;
   font-family: "Cutive Mono", monospace;
   font-size: 13px;
+}
+
+@media (min-width: 991px) {
+  .main .pres .presTop .tex p {
+    font-size: 15px;
+  }
 }
 
 .main .pres .presTop .tex .f1 {
@@ -253,6 +299,12 @@ html {
 @media (min-width: 768px) {
   .main .pres .presTop .tex .f1 {
     font-size: 27px;
+  }
+}
+
+@media (min-width: 991px) {
+  .main .pres .presTop .tex .f1 {
+    font-size: 31px;
   }
 }
 
@@ -269,10 +321,24 @@ html {
   }
 }
 
+@media (min-width: 991px) {
+  .main .pres .presTop img {
+    width: 800px;
+    height: 500px;
+  }
+}
+
 .main .pres .etor {
   width: 80%;
   margin: auto;
   margin-top: 2rem;
+}
+
+@media (min-width: 1500px) {
+  .main .pres .etor {
+    position: relative;
+    left: 7rem;
+  }
 }
 
 .main .pres .etor h3 {
@@ -284,6 +350,12 @@ html {
 @media (min-width: 768px) {
   .main .pres .etor h3 {
     font-size: 33px;
+  }
+}
+
+@media (min-width: 991px) {
+  .main .pres .etor h3 {
+    font-size: 39px;
   }
 }
 
@@ -299,10 +371,22 @@ html {
   }
 }
 
+@media (min-width: 991px) {
+  .main .pres .etor h5 {
+    font-size: 31px;
+  }
+}
+
 .main .pres .etor p {
   width: 90%;
   margin: 1rem auto;
   font-size: 13px;
+}
+
+@media (min-width: 991px) {
+  .main .pres .etor p {
+    font-size: 15px;
+  }
 }
 
 .main .pres .boxProgress {
@@ -318,6 +402,20 @@ html {
   margin-left: 2rem;
 }
 
+@media (min-width: 991px) {
+  .main .pres .boxProgress h5 {
+    font-size: 23px;
+    margin-left: 3rem;
+    top: 1.47rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .main .pres .boxProgress h5 {
+    margin-left: 13rem;
+  }
+}
+
 .main .pres .boxProgress .progress {
   width: 60%;
   height: 9px;
@@ -328,6 +426,20 @@ html {
 @media (min-width: 768px) {
   .main .pres .boxProgress .progress {
     margin-left: 11rem;
+  }
+}
+
+@media (min-width: 991px) {
+  .main .pres .boxProgress .progress {
+    width: 70%;
+    margin-left: 14rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .main .pres .boxProgress .progress {
+    width: 60%;
+    margin-left: 23rem;
   }
 }
 
@@ -344,6 +456,12 @@ html {
 @media (min-width: 768px) {
   .main .mission {
     text-align: left;
+  }
+}
+
+@media (min-width: 991px) {
+  .main .mission {
+    text-align: center;
   }
 }
 
@@ -374,6 +492,12 @@ html {
   }
 }
 
+@media (min-width: 1500px) {
+  .main .mission p {
+    text-align: center;
+  }
+}
+
 .main .mission .vision,
 .main .mission .valeur,
 .main .mission .goal {
@@ -391,6 +515,15 @@ html {
     text-align: center;
     margin-left: 0.9rem;
     margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 991px) {
+  .main .mission .vision,
+  .main .mission .valeur,
+  .main .mission .goal {
+    padding: 0;
+    margin-left: 1.3rem;
   }
 }
 
@@ -422,6 +555,15 @@ html {
   }
 }
 
+@media (min-width: 991px) {
+  .main .mission .vision p,
+  .main .mission .valeur p,
+  .main .mission .goal p {
+    padding: 0;
+    width: 60%;
+  }
+}
+
 .main .mission .vision:hover,
 .main .mission .valeur:hover,
 .main .mission .goal:hover {
@@ -444,6 +586,13 @@ html {
   }
 }
 
+@media (min-width: 991px) {
+  .main .mission .btnMore {
+    position: static;
+    left: 0;
+  }
+}
+
 .main .white {
   width: 100%;
   height: 400px;
@@ -456,6 +605,19 @@ html {
 @media (min-width: 768px) {
   .main .white {
     height: 500px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 991px) {
+  .main .white {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .main .white {
+    width: 60%;
   }
 }
 
@@ -503,6 +665,11 @@ html {
   margin: 1rem auto;
 }
 
+.main .members h1 {
+  font-family: "Grenze", serif;
+  margin-bottom: 2rem;
+}
+
 .main .members .membPic {
   width: 300px;
   margin: 2rem auto;
@@ -513,6 +680,19 @@ html {
   .main .members .membPic {
     width: 230px;
     display: inline-block;
+  }
+}
+
+@media (min-width: 991px) {
+  .main .members .membPic {
+    width: 271px;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .main .members .membPic {
+    width: 300px;
   }
 }
 
@@ -607,5 +787,11 @@ html {
   padding: 0.5rem;
   outline: none;
   margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .main .members .button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
