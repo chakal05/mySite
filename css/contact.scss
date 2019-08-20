@@ -19,10 +19,17 @@ $ipad: 768px;
 }
 
 @mixin bigScreen {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin extraScreen {
   @media (min-width: 1500px) {
     @content;
   }
 }
+
 body,
 html {
   width: 100%;
@@ -39,11 +46,114 @@ html {
   box-sizing: border-box;
 }
 
-main{
+main {
+  width: 100%;
+  margin-bottom: 5rem;
 
-    .left{
-        margin-top: 5rem;
-        background-color: $second;
-        text-align: center;
+  @include ipad {
+    text-align: center;
+    margin-bottom: -7rem;
+  }
+
+  @include desktop {
+  }
+
+  .left {
+    margin-top: 5rem;
+    background-color: $second;
+    text-align: center;
+    padding: 2rem;
+
+    @include ipad {
+      width: 390px;
+      position: relative;
+      top: 5rem;
+      left: 2rem;
+      height: 500px;
+      padding-top: 11rem;
     }
+
+    @include desktop {
+        width: 450px;
+        margin-left: 3rem;
+      }
+  
+      @include bigScreen {
+        margin-left: 7rem;
+      }
+  
+      @include extraScreen {
+        width: 600px;
+      }
+  
+    ul {
+      list-style: none;
+
+      @include ipad {
+   
+      }
+
+      li {
+        margin: 0.5rem;
+
+        i {
+          position: relative;
+          top: 0.3rem;
+        }
+      }
+    }
+  }
+
+  .right {
+    @include ipad {
+      width: 50%;
+      position: relative;
+      top: -21rem;
+      left: 26rem;
+      text-align: left;
+    }
+
+    @include desktop {
+      margin-left: 7rem;
+    
+    }
+
+    @include bigScreen {
+      margin-left: 15rem;
+    }
+
+    @include extraScreen {
+      margin-left: 19rem;
+      width: 55%;
+    }
+
+    h5 {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    form {
+      .form-group {
+        width: 290px;
+        margin: 0 auto;
+        padding-left: 1rem;
+
+        @include ipad {
+          width: 77%;
+        }
+
+        i {
+          position: relative;
+          top: 2.3rem;
+          left: -2rem;
+        }
+      }
+
+      .btn {
+        background-color: $primary;
+        color: #fff;
+        margin-top: 1rem;
+      }
+    }
+  }
 }

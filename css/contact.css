@@ -15,9 +15,123 @@ html {
           box-sizing: border-box;
 }
 
+main {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    text-align: center;
+    margin-bottom: -7rem;
+  }
+}
+
 main .left {
   margin-top: 5rem;
   background-color: #f1f1f1;
   text-align: center;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  main .left {
+    width: 390px;
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+    height: 500px;
+    padding-top: 11rem;
+  }
+}
+
+@media (min-width: 991px) {
+  main .left {
+    width: 450px;
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  main .left {
+    margin-left: 7rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  main .left {
+    width: 600px;
+  }
+}
+
+main .left ul {
+  list-style: none;
+}
+
+main .left ul li {
+  margin: 0.5rem;
+}
+
+main .left ul li i {
+  position: relative;
+  top: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  main .right {
+    width: 50%;
+    position: relative;
+    top: -21rem;
+    left: 26rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 991px) {
+  main .right {
+    margin-left: 7rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  main .right {
+    margin-left: 15rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  main .right {
+    margin-left: 19rem;
+    width: 55%;
+  }
+}
+
+main .right h5 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+main .right form .form-group {
+  width: 290px;
+  margin: 0 auto;
+  padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  main .right form .form-group {
+    width: 77%;
+  }
+}
+
+main .right form .form-group i {
+  position: relative;
+  top: 2.3rem;
+  left: -2rem;
+}
+
+main .right form .btn {
+  background-color: #1b1b1b;
+  color: #fff;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=contact.css.map */

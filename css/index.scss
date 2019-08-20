@@ -128,6 +128,9 @@ html {
     width: 90%;
     margin: 2rem auto;
 
+    // todo----  fix the blinking 
+
+
     @include ipad {
       margin: 5rem auto;
     }
@@ -400,6 +403,8 @@ html {
     margin-top: 5rem;
     background-color: #f1f1f1;
     text-align: center;
+
+ //todo----- divs should have the same hight 
 
     @include ipad {
       text-align: left;
