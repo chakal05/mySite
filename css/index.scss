@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+.container-fluid {
+  .photoSection {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    img {
+      max-height: 550px;
+    }
+
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 11rem;
+      font-family: "Grenze", serif;
+    }
+  }
+
+  .present {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .columns{
+      text-align: center;
+
+      .column{
+          margin: 1.5rem;
+      }
+  }
+}
