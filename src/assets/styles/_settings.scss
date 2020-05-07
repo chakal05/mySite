@@ -1,0 +1,11 @@
+@mixin phoneView {
+	@media (max-width: 500px) {
+		@content;
+	}
+}
+
+@mixin ipadView {
+	@media (max-width: 800px) {
+		@content;
+	}
+}
