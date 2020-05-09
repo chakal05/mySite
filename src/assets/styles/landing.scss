@@ -1,43 +1,46 @@
 @import '../styles/settings';
 
-.landingWrapper{
+.landingWrapper {
     display: flex;
     flex-wrap: wrap;
     margin-top: 5rem;
     padding: 1rem;
-   @include ipadView{
-    
-   }
-    .leftText{
+    @include ipadView {
+        margin-top: 0;
+    }
+    .leftText {
         font-family: 'Roboto';
         width: 50%;
         padding-right: 2rem;
-    @include ipadView{
-       width: 100%;
-       padding: 0;
-    }
-        h1{
+        @include ipadView {
+            width: 100%;
+            padding: 0;
+        }
+        h1 {
             font-size: 3.5rem;
             font-weight: 540;
             margin-bottom: 3rem;
         }
 
-        p{
+        p {
             font-size: 1.2rem;
             color: rgb(87, 87, 87);
             margin-bottom: 3rem;
         }
     }
 
-    .rightPic{
-    width: 50%;
-      @include ipadView{
-        width: 100%;
-     }
-      .pic{
-        position: relative;
-        top:50%;
-        transform: translateY(-50%);
-      }
+    .rightPic {
+        width: 50%;
+
+        @include ipadView {
+            width: 100%;
+            margin-bottom: 5rem;
+            margin-top: 3rem;
+        }
+        .pic {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 }

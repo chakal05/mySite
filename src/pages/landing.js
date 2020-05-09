@@ -1,6 +1,6 @@
 import React from 'react';
 import laptopPic from '../assets/laptop.jpg';
-import Button from 'react-bootstrap/Button';
+import Button from '../components/button';
 import '../assets/styles/landing.scss';
 export default function Landing() {
 	return (
@@ -29,7 +29,7 @@ export default function Landing() {
 						project at a time.
                     </p>
                     
-                    <Button size='lg' variant='dark'> See projects  </Button>
+                    <Button text={'See projects'}/> 
 				</div>
 				<div className='rightPic'>
                     <img
