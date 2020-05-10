@@ -2,21 +2,19 @@
 
 .footerWrapper{
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    background-color: $titleColor;
-    color: white;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-   
+   font-family: 'Roboto';
     
     p{
-        padding-top: .3rem;
-        color: rgb(202, 202, 202);
-       
+        flex: 1;
+        color: $textColor;
+       font-size: 1.2rem;
         .myIcons{
-            margin-top: .3rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
+            color: $textColor;
+            font-size: 1.2rem;
+            margin: 1rem;
         }
     }
 }

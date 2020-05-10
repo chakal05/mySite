@@ -1,19 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Routes from "./router/index";
-import MyHeader from "./components/header";
-import MyFooter from "./components/footer";
-import "bootstrap/dist/css/bootstrap.min.css";
-import * as serviceWorker from "./serviceWorker";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Routes from './router/index';
+import MyHeader from './components/header';
+import MyFooter from './components/footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <MyHeader />
-    <hr style={{ marginTop: "-1px" }} />
-    <Routes />
-    <MyFooter />
-  </React.StrictMode>,
-  document.getElementById("root")
+	<React.StrictMode>
+		<MyHeader />
+		<hr style={{ marginTop: '-1px' }} />
+		<Routes />
+		<hr style={{ marginTop: '-1px' }} />
+		<MyFooter />
+	</React.StrictMode>,
+	document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

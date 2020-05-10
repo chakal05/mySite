@@ -3,10 +3,12 @@
 .landingWrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 11rem;
     padding: 1rem;
     @include ipadView {
-        margin-top: 0;
+        margin-bottom: 7rem;
+        margin-top: 3rem ;
     }
     .leftText {
         font-family: 'Roboto';
@@ -34,7 +36,6 @@
 
         @include ipadView {
             width: 100%;
-            margin-bottom: 5rem;
             margin-top: 3rem;
         }
         .pic {

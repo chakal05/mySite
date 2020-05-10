@@ -12,7 +12,8 @@ export default function MyHeader() {
 					<img
 						src={logo}
 						alt='chakirsLogo'
-						width='200'
+                        width='200'
+                        style={{marginLeft:'-3rem'}}
 					/>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
