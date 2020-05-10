@@ -17,14 +17,14 @@
             padding: 0;
         }
         h1 {
-            font-size: 3.5rem;
+            font-size: $titleSize;
             font-weight: 540;
             margin-bottom: 3rem;
         }
 
         p {
             font-size: 1.2rem;
-            color: rgb(87, 87, 87);
+            color: $textColor;
             margin-bottom: 3rem;
         }
     }

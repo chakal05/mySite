@@ -1,3 +1,7 @@
+$titleColor: rgb(53, 53, 53);
+$titleSize: 3rem;
+$textColor:rgb(88, 88, 88);
+
 @mixin phoneView {
 	@media (max-width: 500px) {
 		@content;

@@ -7,7 +7,6 @@ import {
 import history from '../history';
 import Landing from '../pages/landing';
 import Projects from '../pages/projects';
-import Contact from '../pages/contact';
 import '../assets/styles/container.scss';
 
 export default function Routes() {
@@ -28,12 +27,7 @@ export default function Routes() {
 							component={Projects}
 						/>
 					}
-					{
-						<Route
-							path='/contact'
-							component={Contact}
-						/>
-					}
+					
 				</Switch>
 			</Router>
 		</div>

@@ -1,95 +1,96 @@
+@import '../styles/settings';
 .projectsWrapper {
-    font-family: "Roboto";
-    .title{
-        text-align: center;
-        margin-top: 3rem;
-        margin-bottom: -3rem;
-        
+	font-family: 'Roboto';
+	.title {
+		text-align: center;
+		margin-top: 3rem;
+		margin-bottom: -3rem;
 
-        h1{
-            color: rgb(53, 53, 53);
-            font-size: 3rem;
-            font-weight: 600;
-        }
-    }
+		h1 {
+			color: $titleColor;
+			font-size: $titleSize;
+			font-weight: 600;
+		}
+	}
 
-    .projectsContainer{
-      margin-bottom: 7rem;
-      padding: 1rem;
-        .leftText{
-            margin-top: 7rem;
-            padding: 1rem;
-            .text{
-             height: 230px;
-    
-               h1{
-                   font-size: 3rem;
-                   color: rgb(53, 53, 53);
-               }
+	.projectsContainer {
+		margin-bottom: 7rem;
+		padding: 1rem;
+		.leftText {
+			margin-top: 7rem;
+			padding: 1rem;
+			.text {
+				height: 230px;
 
-               p{
-                   font-size: 1.27rem;
-                   color: rgb(104, 104, 104);
-               }
-                
-            }
+				h1 {
+					font-size: $titleSize;
+					color: $titleColor;
+				}
 
-            .pic{
-              height: 230px;
-            margin-left: 7rem;
+				p {
+					font-size: 1.27rem;
+					color: $textColor;
+				}
+			}
 
-              .picContainer{
-                  height: 100%;
-                  width: 450px;
-                position: relative;
+			.pic {
+				height: 230px;
+				margin-left: 7rem;
 
-                &:hover img{
-                    opacity: .3;
-                }
+				.picContainer {
+					height: 100%;
+					width: 450px;
+					position: relative;
 
-                &:hover .imageText{
-                    opacity: 1;
-                }
+					&:hover img {
+						opacity: 0.3;
+					}
 
-                img{
-                    opacity: 1;
-                    display: block;
-                    transition: .5s ease;
-                    backface-visibility: hidden;
-                }
+					&:hover .imageText {
+						opacity: 1;
+					}
 
-                .imageText{
-                    transition: .5s ease;
-                    opacity: 0;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                    text-align: center;
+					img {
+						opacity: 1;
+						display: block;
+						transition: 0.5s ease;
+						backface-visibility: hidden;
+					}
 
-                    .btn{
-                        background-color: #4CAF50;
-                        color: white;
-                        font-size: 16px;
-                        padding: 16px 32px;
-                    }
-                }
-                  
-              }
-             
-            }
+					.imageText {
+						transition: 0.5s ease;
+						opacity: 0;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(
+							-50%,
+							-50%
+						);
+						-ms-transform: translate(
+							-50%,
+							-50%
+						);
+						text-align: center;
 
-            .right{
-                text-align: right;
-                padding-left: 3rem;
-            }
+						.btn {
+							background-color: #4caf50;
+							color: white;
+							font-size: 16px;
+							padding: 16px 32px;
+						}
+					}
+				}
+			}
 
-            .left{
-                margin-left: 0;
-            }
-        }
+			.right {
+				text-align: right;
+				padding-left: 3rem;
+			}
 
-
-    }
+			.left {
+				margin-left: 0;
+			}
+		}
+	}
 }
