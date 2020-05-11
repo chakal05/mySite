@@ -1,27 +1,60 @@
 @import '../styles/settings';
-.projectsWrapper {
+
+@mixin ipadView {
+	@media (max-width: 760px) {
+		@content;
+	}
+}
+
+.projectsPage {
 	font-family: 'Roboto';
-	.title {
+	.pageTitle {
 		text-align: center;
 		margin-top: 3rem;
 		margin-bottom: -3rem;
 
+        @include ipadView{
+            margin-bottom: 2rem;
+        }
+
 		h1 {
 			color: $titleColor;
 			font-size: $titleSize;
-			font-weight: 600;
 		}
 	}
 
 	.projectsContainer {
-		margin-bottom: 13rem;
+		margin-bottom: 9rem;
 		padding: 1rem;
-		.leftText {
+
+        @include ipadView{
+            margin-bottom: 4rem;
+        }
+
+		.projectItem {
 			margin-top: 7rem;
 			padding: 1rem;
+
+			@include desktopView {
+				margin-top: 5rem;
+            }
+            
+            @include ipadView{
+                margin-top: 0;
+            }
+
 			.text {
 				height: 230px;
 
+				@include desktopView {
+					height: auto;
+				}
+
+				@include ipadView {
+					flex: none;
+                    text-align: center;
+                    margin-bottom: 2rem;
+				}
 				h1 {
 					font-size: $titleSize;
 					color: $titleColor;
@@ -35,12 +68,22 @@
 
 			.pic {
 				height: 230px;
-				
+				display: flex;
+				flex-direction: row-reverse;
+                position: relative;
+                
+                @include ipadView{
+                    margin-top: 0;
+                }
 
 				.picContainer {
 					height: 100%;
 					width: 450px;
-					position: relative;
+
+					@include desktopView {
+						width: auto;
+						margin-top: 1rem;
+					}
 
 					&:hover img {
 						opacity: 0.3;
@@ -83,14 +126,29 @@
 				}
 			}
 
-			.right {
+			.rightText {
 				text-align: right;
-				padding-left: 3rem;
+                padding-left: 3rem;
+                
+                @include ipadView {
+					flex: none;
+					text-align: center;
+                    margin-top: 3rem;
+                    padding-left: 0;
+                }
 			}
 
-			.left {
-				margin-left: 0;
-			}
+			.leftPic {
+				display: flex;
+                flex-direction: row;
+
+                @include ipadView{
+                   margin-top: 5rem;
+                }
+            
+            }
+            
+
 		}
 	}
 }

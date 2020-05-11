@@ -2,10 +2,10 @@ import React from 'react';
 import laptopPic from '../assets/laptop.jpg';
 import Button from '../components/button';
 import '../assets/styles/landing.scss';
-export default function Landing() {
+export default function Landing(props) {
 	return (
 		<>
-			<div className='landingWrapper'>
+			<div className='landingPage'>
 				<div className='leftText'>
 					<h1>
 						Hi, I’m Chakir. Nice to meet
@@ -27,13 +27,19 @@ export default function Landing() {
 						curious, and perpetually working
 						on improving my skills one
 						project at a time.
-                    </p>
-                    
-                    <Button text={'See projects'}/> 
+					</p>
+					<Button
+						text={'See projects'}
+						action={() => {
+							props.history.push(
+								'/projects'
+							);
+						}}
+					/>
 				</div>
 				<div className='rightPic'>
-                    <img
-                        className='pic'
+					<img
+						className='pic'
 						src={laptopPic}
 						alt='laptop'
 						width='100%'

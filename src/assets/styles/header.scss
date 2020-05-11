@@ -1,0 +1,16 @@
+@import './settings';
+
+.logo {
+	margin-left: -3rem;
+}
+
+.link {
+	text-decoration: none;
+	color: $textColor;
+	margin: 0.5rem;
+
+	&:hover {
+		color: black;
+		text-decoration: none;
+	}
+}

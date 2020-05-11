@@ -18,18 +18,24 @@ export default function MyFooter() {
 				</span>{' '}
 				<br />
 				<span>
-					<a href='#' className='myIcons'>
+					<a
+						href='https://www.linkedin.com/feed/'
+						className='myIcons'>
 						{' '}
 						<FontAwesomeIcon
 							icon={faLinkedin}
 						/>
 					</a>
-					<a href='#' className='myIcons'>
+					<a
+						href='https://twitter.com/Chakir_17'
+						className='myIcons'>
 						<FontAwesomeIcon
 							icon={faTwitter}
 						/>
 					</a>
-					<a className='myIcons' href='#'>
+					<a
+						className='myIcons'
+						href='https://github.com/chakal05'>
 						<FontAwesomeIcon
 							icon={faGithub}
 						/>

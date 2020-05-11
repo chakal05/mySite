@@ -8,14 +8,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Paper from '@material-ui/core/Paper';
 import Button from '../components/button';
-export default function Projects() {
+export default function Projects(props) {
 	return (
-		<div className='projectsWrapper'>
-			<div className='title'>
+		<div className='projectsPage'>
+			<div className='pageTitle'>
 				<h1> Past projects </h1>
 			</div>
 			<div className='projectsContainer'>
-				<Row className='leftText'>
+				<Row className='projectItem'>
 					<Col className='text '>
 						<h1>KerJa</h1>
 						<p>
@@ -34,6 +34,10 @@ export default function Projects() {
 						</p>
 						<Button
 							text={'See on Github'}
+							action={() => {
+								window.location.href =
+									'https://github.com/chakal05/PolEmploiDjiboutien';
+							}}
 						/>
 					</Col>
 					<Col className='pic'>
@@ -49,15 +53,19 @@ export default function Projects() {
 							<div className='imageText'>
 								<Button
 									className='btn'
-									text={'Visit me'}
+									text={'Visit website'}
+									action={() => {
+										window.location.href =
+											'https://nostalgic-spence-2231c5.netlify.app/';
+									}}
 								/>
 							</div>
 						</Paper>
 					</Col>
 				</Row>
 
-				<Row className='leftText'>
-					<Col className='pic left'>
+				<Row className='projectItem'>
+					<Col className='pic leftPic'>
 						<Paper
 							className='picContainer'
 							elevation={7}>
@@ -70,13 +78,17 @@ export default function Projects() {
 							<div className='imageText'>
 								<Button
 									className='btn'
-									text={'Visit me'}
+									text={'Visit website'}
+									action={() => {
+										window.location.href =
+											'http://manedek.com/';
+									}}
 								/>
 							</div>
 						</Paper>
 					</Col>
-					<Col className='text right'>
-						<h1>Manedek medical center</h1>
+					<Col className='text rightText'>
+						<h1>Manedek </h1>
 						<p>
 							This is a hospital management
 							system to keep track and
@@ -92,27 +104,38 @@ export default function Projects() {
 						</p>
 						<Button
 							text={'See on Github'}
+							action={() => {
+								window.location.href =
+									'https://github.com/chakal05/peltierDev';
+							}}
 						/>
 					</Col>
 				</Row>
-				<Row className='leftText'>
-					<Col className='text '>
-						<h1>Menfop</h1>
+				<Row className='projectItem '>
+					<Col className='text currency'>
+						<h1>
+							Currency
+							converter
+						</h1>
 						<p>
-							Menfop allows students to get
-							the results of the national
-							exam online.
+							With the Dollar as base, this
+							website allows users to
+							convert to and from different
+							scandinavian currencies.
 						</p>
 
 						<p>
 							<i>
 								<u>Tools</u>
 							</i>
-							: HTML, Sass, Javascript,
-							Php, MySQL
+							: HTML, Sass, Vue
 						</p>
 						<Button
 							text={'See on Github'}
+							action={() => {
+								window.location.href =
+									'https://github.com/chakal05/scanCurr-Dev';
+							}}
 						/>
 					</Col>
 					<Col className='pic'>
@@ -129,14 +152,17 @@ export default function Projects() {
 								<Button
 									className='btn'
 									text={'Visit me'}
+									action={() => {
+										//add link to scandinavian currency working website
+									}}
 								/>
 							</div>
 						</Paper>
 					</Col>
 				</Row>
 
-				<Row className='leftText'>
-					<Col className='pic left '>
+				<Row className='projectItem'>
+					<Col className='pic leftPic '>
 						<Paper
 							className='picContainer'
 							elevation={7}>
@@ -150,11 +176,15 @@ export default function Projects() {
 								<Button
 									className='btn'
 									text={'Visit me'}
+									action={() => {
+										window.location.href =
+											'https://hawajano.com/';
+									}}
 								/>
 							</div>
 						</Paper>
 					</Col>
-					<Col className='text right'>
+					<Col className='text rightText'>
 						<h1>Jano online store</h1>
 						<p>
 							This is an e-commerce website
@@ -168,9 +198,6 @@ export default function Projects() {
 							</i>
 							: WordPress, Woocommerce
 						</p>
-						<Button
-							text={'See on Github'}
-						/>
 					</Col>
 				</Row>
 			</div>

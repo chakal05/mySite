@@ -13,3 +13,9 @@ $textColor:rgb(107, 107, 107);
 		@content;
 	}
 }
+
+@mixin desktopView {
+	@media (max-width: 1000px)  {
+		@content;
+	}
+}
