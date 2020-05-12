@@ -71,18 +71,21 @@
 				display: flex;
 				flex-direction: row-reverse;
                 position: relative;
-                
+
+
                 @include ipadView{
                     margin-top: 0;
                 }
 
+               
+
 				.picContainer {
 					height: 100%;
-					width: 450px;
+                    width: 450px;
+                    margin: 0 auto;
 
 					@include desktopView {
 						width: auto;
-						margin-top: 1rem;
 					}
 
 					&:hover img {
@@ -121,7 +124,9 @@
 							color: white;
 							font-size: 16px;
 							padding: 16px 32px;
-						}
+                        }
+                        
+                      
 					}
 				}
 			}
