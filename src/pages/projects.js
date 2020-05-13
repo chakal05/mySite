@@ -153,7 +153,7 @@ export default function Projects(props) {
 									className='btn'
 									text={'Visit me'}
 									action={() => {
-										//add link to scandinavian currency working website
+										window.location.href='https://scancurr.netlify.app'
 									}}
 								/>
 							</div>
