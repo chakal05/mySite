@@ -72,7 +72,7 @@
 				position: relative;
 
 				@include ipadView {
-					margin-top: 0;
+					margin: 1rem;
 				}
 
 				.picContainer {
@@ -82,11 +82,6 @@
 
 					@include desktopView {
 						width: auto;
-					}
-
-					@include ipadView {
-						width: 90%;
-						height: 75%;
 					}
 
 					&:hover img {
