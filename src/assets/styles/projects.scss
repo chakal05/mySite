@@ -1,7 +1,7 @@
 @import '../styles/settings';
 
 @mixin ipadView {
-	@media (max-width: 760px) {
+	@media (max-width: 651px) {
 		@content;
 	}
 }
@@ -13,9 +13,9 @@
 		margin-top: 3rem;
 		margin-bottom: -3rem;
 
-        @include ipadView{
-            margin-bottom: 2rem;
-        }
+		@include ipadView {
+			margin-bottom: 1rem;
+		}
 
 		h1 {
 			color: $titleColor;
@@ -27,21 +27,20 @@
 		margin-bottom: 9rem;
 		padding: 1rem;
 
-        @include ipadView{
-            margin-bottom: 4rem;
-        }
-
+		@include ipadView {
+			margin-bottom: 3rem;
+		}
 		.projectItem {
 			margin-top: 7rem;
 			padding: 1rem;
 
 			@include desktopView {
 				margin-top: 5rem;
-            }
-            
-            @include ipadView{
-                margin-top: 0;
-            }
+			}
+
+			@include ipadView {
+				margin-top: 0;
+			}
 
 			.text {
 				height: 230px;
@@ -52,8 +51,8 @@
 
 				@include ipadView {
 					flex: none;
-                    text-align: center;
-                    margin-bottom: 2rem;
+					text-align: center;
+					margin-bottom: 2rem;
 				}
 				h1 {
 					font-size: $titleSize;
@@ -70,22 +69,24 @@
 				height: 230px;
 				display: flex;
 				flex-direction: row-reverse;
-                position: relative;
+				position: relative;
 
-
-                @include ipadView{
-                    margin-top: 0;
-                }
-
-               
+				@include ipadView {
+					margin-top: 0;
+				}
 
 				.picContainer {
 					height: 100%;
-                    width: 450px;
-                    margin: 0 auto;
+					width: 450px;
+					margin: 0 auto;
 
 					@include desktopView {
 						width: auto;
+					}
+
+					@include ipadView {
+						width: 90%;
+						height: 75%;
 					}
 
 					&:hover img {
@@ -109,14 +110,8 @@
 						position: absolute;
 						top: 50%;
 						left: 50%;
-						transform: translate(
-							-50%,
-							-50%
-						);
-						-ms-transform: translate(
-							-50%,
-							-50%
-						);
+						transform: translate(-50%, -50%);
+						-ms-transform: translate(-50%, -50%);
 						text-align: center;
 
 						.btn {
@@ -124,36 +119,26 @@
 							color: white;
 							font-size: 16px;
 							padding: 16px 32px;
-                        }
-                        
-                      
+						}
 					}
 				}
 			}
 
 			.rightText {
 				text-align: right;
-                padding-left: 3rem;
-                
-                @include ipadView {
+				padding-left: 3rem;
+
+				@include ipadView {
 					flex: none;
 					text-align: center;
-                    margin-top: 3rem;
-                    padding-left: 0;
-                }
+					padding-left: 0;
+				}
 			}
 
 			.leftPic {
 				display: flex;
-                flex-direction: row;
-
-                @include ipadView{
-                   margin-top: 5rem;
-                }
-            
-            }
-            
-
+				flex-direction: row;
+			}
 		}
 	}
 }
