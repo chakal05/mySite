@@ -41,7 +41,7 @@ export default function Landing(props) {
 					<img
 						className='pic'
 						src={laptopPic}
-						alt='laptop'
+						alt='chakir khaire'
 						width='100%'
 					/>
 				</div>

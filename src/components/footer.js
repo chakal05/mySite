@@ -11,10 +11,8 @@ export default function MyFooter() {
 			<p>
 				<span>
 					{' '}
-					<FontAwesomeIcon
-						icon={faEnvelope}
-					/>{' '}
-					: chakirkhaire@gmail.com{' '}
+					<FontAwesomeIcon icon={faEnvelope} /> :
+					chakirkhaire@gmail.com{' '}
 				</span>{' '}
 				<br />
 				<span>
@@ -22,29 +20,29 @@ export default function MyFooter() {
 						href='https://www.linkedin.com/feed/'
 						className='myIcons'>
 						{' '}
-						<FontAwesomeIcon
-							icon={faLinkedin}
-						/>
+						<FontAwesomeIcon icon={faLinkedin} />
 					</a>
 					<a
 						href='https://twitter.com/Chakir_17'
 						className='myIcons'>
-						<FontAwesomeIcon
-							icon={faTwitter}
-						/>
+						<FontAwesomeIcon icon={faTwitter} />
 					</a>
 					<a
 						className='myIcons'
 						href='https://github.com/chakal05'>
-						<FontAwesomeIcon
-							icon={faGithub}
-						/>
+						<FontAwesomeIcon icon={faGithub} />
 					</a>
 				</span>{' '}
 				<br />
 				<span>
 					{' '}
-					{`${new Date().getFullYear()} | Chakir Khaire`}{' '}
+					{`${new Date().getFullYear()} | `}{' '}
+					<a
+                        className='myIcons'
+                        style={{textDecoration:'none'}}
+						href='https://www.chakirkhaire.com/'>
+						Chakir Khaire
+					</a>
 				</span>
 			</p>
 		</div>
