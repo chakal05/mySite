@@ -116,7 +116,7 @@ export default function Projects(props) {
 							<i>
 								<u>Tools</u>
 							</i>
-							: HTML, Sass, Vue
+							: React
 						</p>
 						<Button
 							text={'See on Github'}
