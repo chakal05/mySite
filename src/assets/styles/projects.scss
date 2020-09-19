@@ -111,10 +111,13 @@
 						text-align: center;
 
 						.btn {
-							background-color: #4caf50;
-							color: white;
-							font-size: 16px;
-							padding: 16px 32px;
+                            background-color: black;
+                            color: white;
+                            border: none;
+                            width: 170px;
+                            padding: .5rem;
+                            border-radius: .2rem;
+                            font-size: 1.1rem;
 						}
 					}
 				}

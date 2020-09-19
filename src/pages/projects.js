@@ -19,10 +19,8 @@ export default function Projects(props) {
 					<Col className='text '>
 						<h1>KerJa</h1>
 						<p>
-							Kerja is a web application
-							that is inspired by the
-							swedish job search
-							application, called
+							Kerja is a web application that is inspired by
+							the swedish job search application, called
 							"Platsbanken".
 						</p>
 
@@ -41,9 +39,7 @@ export default function Projects(props) {
 						/>
 					</Col>
 					<Col className='pic'>
-						<Paper
-							className='picContainer'
-							elevation={11}>
+						<Paper className='picContainer' elevation={11}>
 							<img
 								src={kerja}
 								alt='pic'
@@ -51,14 +47,14 @@ export default function Projects(props) {
 								height='100%'
 							/>
 							<div className='imageText'>
-								<Button
+								<a
 									className='btn'
-									text={'Visit website'}
-									action={() => {
-										window.location.href =
-											'https://nostalgic-spence-2231c5.netlify.app/';
-									}}
-								/>
+									href='https://nostalgic-spence-2231c5.netlify.app/'
+									target='_blank'
+									rel='noopener noreferrer'>
+									{' '}
+									Visit website
+								</a>
 							</div>
 						</Paper>
 					</Col>
@@ -66,9 +62,7 @@ export default function Projects(props) {
 
 				<Row className='projectItem'>
 					<Col className='pic leftPic'>
-						<Paper
-							className='picContainer'
-							elevation={7}>
+						<Paper className='picContainer' elevation={7}>
 							<img
 								src={manedek}
 								alt='pic'
@@ -76,24 +70,22 @@ export default function Projects(props) {
 								height='100%'
 							/>
 							<div className='imageText'>
-								<Button
+								<a
 									className='btn'
-									text={'Visit website'}
-									action={() => {
-										window.location.href =
-											'http://manedek.com/';
-									}}
-								/>
+									href='http://manedek.com/'
+									target='_blank'
+									rel='noopener noreferrer'>
+									{' '}
+									Visit website
+								</a>
 							</div>
 						</Paper>
 					</Col>
 					<Col className='text rightText'>
 						<h1>Manedek </h1>
 						<p>
-							This is a hospital management
-							system to keep track and
-							trace the activities of the
-							hospital.
+							This is a hospital management system to keep
+							track and trace the activities of the hospital.
 						</p>
 
 						<p>
@@ -113,14 +105,10 @@ export default function Projects(props) {
 				</Row>
 				<Row className='projectItem '>
 					<Col className='text currency'>
-						<h1>
-							Currency
-							converter
-						</h1>
+						<h1>Currency converter</h1>
 						<p>
-							With the Dollar as base, this
-							website allows users to
-							convert to and from different
+							With the Dollar as base, this website allows
+							users to convert to and from different
 							scandinavian currencies.
 						</p>
 
@@ -139,9 +127,7 @@ export default function Projects(props) {
 						/>
 					</Col>
 					<Col className='pic'>
-						<Paper
-							className='picContainer'
-							elevation={11}>
+						<Paper className='picContainer' elevation={11}>
 							<img
 								src={currency}
 								alt='pic'
@@ -149,13 +135,14 @@ export default function Projects(props) {
 								height='100%'
 							/>
 							<div className='imageText'>
-								<Button
+								<a
 									className='btn'
-									text={'Visit me'}
-									action={() => {
-										window.location.href='https://scancurr.netlify.app'
-									}}
-								/>
+									href='https://scancurr.netlify.app'
+									target='_blank'
+									rel='noopener noreferrer'>
+									{' '}
+									Visit website
+								</a>
 							</div>
 						</Paper>
 					</Col>
@@ -163,9 +150,7 @@ export default function Projects(props) {
 
 				<Row className='projectItem'>
 					<Col className='pic leftPic '>
-						<Paper
-							className='picContainer'
-							elevation={7}>
+						<Paper className='picContainer' elevation={7}>
 							<img
 								src={hawa}
 								alt='pic'
@@ -173,23 +158,22 @@ export default function Projects(props) {
 								height='100%'
 							/>
 							<div className='imageText'>
-								<Button
+								<a
 									className='btn'
-									text={'Visit me'}
-									action={() => {
-										window.location.href =
-											'https://hawajano.com/';
-									}}
-								/>
+									href='https://hawajano.com/'
+									target='_blank'
+									rel='noopener noreferrer'>
+									{' '}
+									Visit website
+								</a>
 							</div>
 						</Paper>
 					</Col>
 					<Col className='text rightText'>
 						<h1>Jano online store</h1>
 						<p>
-							This is an e-commerce website
-							where users can browse
-							products and buy them.
+							This is an e-commerce website where users can
+							browse products and buy them.
 						</p>
 
 						<p>
