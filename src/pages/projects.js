@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/projects.scss';
-import hawa from '../assets/hawa.png';
+import sasmiya from '../assets/sasmiya.png';
 import kerja from '../assets/kerja.png';
 import currency from '../assets/currency.png';
 import manedek from '../assets/manedek.png';
@@ -17,31 +17,23 @@ export default function Projects(props) {
 			<div className='projectsContainer'>
 				<Row className='projectItem'>
 					<Col className='text '>
-						<h1>KerJa</h1>
+						<h1>SasMiya </h1>
 						<p>
-							Kerja is a web application that is inspired by
-							the swedish job search application, called
-							"Platsbanken".
+							On this website, visitors can search worldwide
+							news headline
 						</p>
 
 						<p>
 							<i>
 								<u>Tools</u>
 							</i>
-							: React, Sass, Firebase
+							: React, Sass, MongoDb, Express
 						</p>
-						<Button
-							text={'See on Github'}
-							action={() => {
-								window.location.href =
-									'https://github.com/chakal05/PolEmploiDjiboutien';
-							}}
-						/>
 					</Col>
 					<Col className='pic'>
-						<Paper className='picContainer' elevation={11}>
+						<Paper className='picContainer' elevation={7}>
 							<img
-								src={kerja}
+								src={sasmiya}
 								alt='pic'
 								width='100%'
 								height='100%'
@@ -49,7 +41,7 @@ export default function Projects(props) {
 							<div className='imageText'>
 								<a
 									className='btn'
-									href='https://nostalgic-spence-2231c5.netlify.app/'
+									href='http://djibarchives.com/'
 									target='_blank'
 									rel='noopener noreferrer'>
 									{' '}
@@ -150,9 +142,9 @@ export default function Projects(props) {
 
 				<Row className='projectItem'>
 					<Col className='pic leftPic '>
-						<Paper className='picContainer' elevation={7}>
+						<Paper className='picContainer' elevation={11}>
 							<img
-								src={hawa}
+								src={kerja}
 								alt='pic'
 								width='100%'
 								height='100%'
@@ -160,7 +152,7 @@ export default function Projects(props) {
 							<div className='imageText'>
 								<a
 									className='btn'
-									href='https://hawajano.com/'
+									href='https://nostalgic-spence-2231c5.netlify.app/'
 									target='_blank'
 									rel='noopener noreferrer'>
 									{' '}
@@ -170,18 +162,26 @@ export default function Projects(props) {
 						</Paper>
 					</Col>
 					<Col className='text rightText'>
-						<h1>Jano online store</h1>
+						<h1>KerJa</h1>
 						<p>
-							This is an e-commerce website where users can
-							browse products and buy them.
+							Kerja is a web application that is inspired by
+							the swedish job search application, called
+							"Platsbanken".
 						</p>
 
 						<p>
 							<i>
 								<u>Tools</u>
 							</i>
-							: WordPress, Woocommerce
+							: React, Sass, Firebase
 						</p>
+						<Button
+							text={'See on Github'}
+							action={() => {
+								window.location.href =
+									'https://github.com/chakal05/PolEmploiDjiboutien';
+							}}
+						/>
 					</Col>
 				</Row>
 			</div>
