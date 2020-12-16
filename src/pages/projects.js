@@ -4,8 +4,7 @@ import sasmiya from '../assets/sasmiya.png';
 import kerja from '../assets/kerja.png';
 import currency from '../assets/currency.png';
 import manedek from '../assets/manedek.png';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import {Row, Col} from 'react-bootstrap';
 import Paper from '@material-ui/core/Paper';
 import Button from '../components/button';
 export default function Projects(props) {
