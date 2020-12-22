@@ -3,7 +3,6 @@ import '../assets/styles/projects.scss';
 import sasmiya from '../assets/sasmiya.png';
 import kerja from '../assets/kerja.png';
 import currency from '../assets/currency.png';
-import manedek from '../assets/manedek.png';
 import {Row, Col} from 'react-bootstrap';
 import Paper from '@material-ui/core/Paper';
 import Button from '../components/button';
@@ -52,47 +51,48 @@ export default function Projects(props) {
 				</Row>
 
 				<Row className='projectItem'>
-					<Col className='pic leftPic'>
-						<Paper className='picContainer' elevation={7}>
-							<img
-								src={manedek}
-								alt='pic'
-								width='100%'
-								height='100%'
-							/>
-							<div className='imageText'>
-								<a
-									className='btn'
-									href='http://manedek.com/'
-									target='_blank'
-									rel='noopener noreferrer'>
-									{' '}
-									Visit website
-								</a>
-							</div>
-						</Paper>
-					</Col>
-					<Col className='text rightText'>
-						<h1>Manedek </h1>
-						<p>
-							This is a hospital management system to keep
-							track and trace the activities of the hospital.
-						</p>
+                <Col className='pic leftPic '>
+                <Paper className='picContainer' elevation={11}>
+                    <img
+                        src={kerja}
+                        alt='pic'
+                        width='100%'
+                        height='100%'
+                    />
+                    <div className='imageText'>
+                        <a
+                            className='btn'
+                            href='https://nostalgic-spence-2231c5.netlify.app/'
+                            target='_blank'
+                            rel='noopener noreferrer'>
+                            {' '}
+                            Visit website
+                        </a>
+                    </div>
+                </Paper>
+            </Col>
+            <Col className='text rightText'>
+                <h1>KerJa</h1>
+                <p>
+                    Kerja is a web application that is inspired by
+                    the swedish job search application, called
+                    "Platsbanken".
+                </p>
 
-						<p>
-							<i>
-								<u>Tools</u>
-							</i>
-							: Vue,Sass, Express, MongoDb
-						</p>
-						<Button
-							text={'See on Github'}
-							action={() => {
-								window.location.href =
-									'https://github.com/chakal05/peltierDev';
-							}}
-						/>
-					</Col>
+                <p>
+                    <i>
+                        <u>Tools</u>
+                    </i>
+                    : React, Sass, Firebase
+                </p>
+                <Button
+                    text={'See on Github'}
+                    action={() => {
+                        window.location.href =
+                            'https://github.com/chakal05/PolEmploiDjiboutien';
+                    }}
+                />
+            </Col>
 				</Row>
 				<Row className='projectItem '>
 					<Col className='text currency'>
@@ -139,50 +139,6 @@ export default function Projects(props) {
 					</Col>
 				</Row>
 
-				<Row className='projectItem'>
-					<Col className='pic leftPic '>
-						<Paper className='picContainer' elevation={11}>
-							<img
-								src={kerja}
-								alt='pic'
-								width='100%'
-								height='100%'
-							/>
-							<div className='imageText'>
-								<a
-									className='btn'
-									href='https://nostalgic-spence-2231c5.netlify.app/'
-									target='_blank'
-									rel='noopener noreferrer'>
-									{' '}
-									Visit website
-								</a>
-							</div>
-						</Paper>
-					</Col>
-					<Col className='text rightText'>
-						<h1>KerJa</h1>
-						<p>
-							Kerja is a web application that is inspired by
-							the swedish job search application, called
-							"Platsbanken".
-						</p>
-
-						<p>
-							<i>
-								<u>Tools</u>
-							</i>
-							: React, Sass, Firebase
-						</p>
-						<Button
-							text={'See on Github'}
-							action={() => {
-								window.location.href =
-									'https://github.com/chakal05/PolEmploiDjiboutien';
-							}}
-						/>
-					</Col>
-				</Row>
 			</div>
 		</div>
 	);
