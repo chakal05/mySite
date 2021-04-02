@@ -25,7 +25,7 @@ export default function Projects(props) {
 							<i>
 								<u>Tools</u>
 							</i>
-							: React, Sass, MongoDb, Express
+							: React, Sass, NewsSearchApi
 						</p>
 					</Col>
 					<Col className='pic'>
@@ -39,7 +39,7 @@ export default function Projects(props) {
 							<div className='imageText'>
 								<a
 									className='btn'
-									href='http://djibarchives.com/'
+									href='https://affectionate-volhard-b9e5b2.netlify.app/'
 									target='_blank'
 									rel='noopener noreferrer'>
 									{' '}
