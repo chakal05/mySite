@@ -27,6 +27,13 @@ export default function Projects(props) {
 							</i>
 							: React, Sass, NewsSearchApi
 						</p>
+                        <Button
+							text={'See on Github'}
+							action={() => {
+								window.location.href =
+									'https://github.com/chakal05/coloc';
+							}}
+						/>
 					</Col>
 					<Col className='pic'>
 						<Paper className='picContainer' elevation={7}>
