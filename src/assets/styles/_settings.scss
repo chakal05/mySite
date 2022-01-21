@@ -3,19 +3,19 @@ $titleSize: 3rem;
 $textColor:rgb(107, 107, 107);
 
 @mixin phoneView {
-	@media (max-width: 500px) {
+	@media (max-width: 3200px) {
 		@content;
 	}
 }
 
 @mixin ipadView {
-	@media (max-width: 800px) {
+	@media screen and (min-width: 767px) {
 		@content;
 	}
 }
 
 @mixin desktopView {
-	@media (max-width: 1000px)  {
+	@media (min-width: 900px)  {
 		@content;
 	}
 }

@@ -1,142 +1,52 @@
 @import '../styles/settings';
 
-@mixin ipadView {
-	@media (max-width: 651px) {
-		@content;
-	}
-}
-
 .projectsPage {
-	font-family: 'Roboto';
 	.pageTitle {
 		text-align: center;
-		margin-top: 3rem;
-		margin-bottom: -3rem;
-
-		@include ipadView {
-			margin-bottom: 1rem;
-		}
+		margin: 3rem 0;
 
 		h1 {
 			color: $titleColor;
-			font-size: $titleSize;
+			font-size: 4rem;
 		}
 	}
 
 	.projectsContainer {
-		margin-bottom: 9rem;
-		padding: 1rem;
+		margin-bottom: 7rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-		@include ipadView {
-			margin-bottom: 3rem;
+		li {
+			list-style: none;
 		}
-		.projectItem {
-			margin-top: 7rem;
+
+		@media screen and (min-width: 1200px) {
 			padding: 1rem;
+			flex-direction: row;
+			justify-content: center;
+			justify-items: center;
+		}
 
-			@include desktopView {
-				margin-top: 5rem;
+		.myCard {
+			margin: 2rem 0;
+
+			@media screen and (min-width: 500px) {
+				height: 420px;
+				width: 450px;
+				margin: 2rem auto;
 			}
 
-			@include ipadView {
-				margin-top: 0;
+			@media screen and (min-width: 1200px) {
+				width: 300px;
+				margin: 2rem auto;
 			}
+		}
 
-			.text {
-				height: 230px;
-
-				@include desktopView {
-					height: auto;
-				}
-
-				@include ipadView {
-					flex: none;
-					text-align: center;
-					margin-bottom: 2rem;
-				}
-				h1 {
-					font-size: $titleSize;
-					color: $titleColor;
-				}
-
-				p {
-					font-size: 1.27rem;
-					color: $textColor;
-				}
-			}
-
-			.pic {
-				height: 230px;
-				display: flex;
-				flex-direction: row-reverse;
-				position: relative;
-
-				@include ipadView {
-                    margin: 1rem;
-                    height: 180px;
-				}
-
-				.picContainer {
-					height: 100%;
-					width: 450px;
-					margin: 0 auto;
-
-					@include desktopView {
-						width: auto;
-					}
-
-					&:hover img {
-						opacity: 0.3;
-					}
-
-					&:hover .imageText {
-						opacity: 1;
-					}
-
-					img {
-						opacity: 1;
-						display: block;
-						transition: 0.5s ease;
-						backface-visibility: hidden;
-					}
-
-					.imageText {
-						transition: 0.5s ease;
-						opacity: 0;
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-						-ms-transform: translate(-50%, -50%);
-						text-align: center;
-
-						.btn {
-                            background-color: black;
-                            color: white;
-                            border: none;
-                            width: 170px;
-                            padding: .5rem;
-                            border-radius: .2rem;
-                            font-size: 1.1rem;
-						}
-					}
-				}
-			}
-
-			.rightText {
-				text-align: right;
-				padding-left: 3rem;
-
-				@include ipadView {
-					flex: none;
-					text-align: center;
-					padding-left: 0;
-				}
-			}
-
-			.leftPic {
-				display: flex;
-				flex-direction: row;
+		.cardBody {
+			height: 150px;
+			@media screen and (min-width: 1200px) {
+				height: 170px;
 			}
 		}
 	}

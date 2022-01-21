@@ -1,47 +1,56 @@
 @import '../styles/settings';
 
 .landingPage {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 6rem;
-    margin-bottom: 11rem;
-    padding: 1rem;
-    @include ipadView {
-        margin-bottom: 7rem;
-        margin-top: 3rem ;
-    }
-    .leftText {
-        font-family: 'Roboto';
-        width: 50%;
-        padding-right: 2rem;
-        @include ipadView {
-            width: 100%;
-            padding: 0;
-        }
-        h1 {
-            font-size: $titleSize;
-            font-weight: 540;
-            margin-bottom: 3rem;
-        }
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	padding: 1rem;
 
-        p {
-            font-size: 1.2rem;
-            color: $textColor;
-            margin-bottom: 3rem;
-        }
-    }
+	@include desktopView {
+		display: grid;
+		grid-template-areas: ' left right';
+		grid-template-rows: auto;
+        margin: 5rem 0;
+	}
 
-    .rightPic {
-        width: 50%;
+	.leftText {
+		grid-area: left;
+		margin-bottom: 3rem;
+		@include ipadView {
+			margin-bottom: 5rem;
+		}
 
-        @include ipadView {
-            width: 100%;
-            margin-top: 3rem;
-        }
-        .pic {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    }
+		@include desktopView {
+			margin-bottom: 5rem;
+		}
+
+		padding-right: 2rem;
+
+		h1 {
+			font-size: $titleSize;
+			font-weight: 540;
+			margin-bottom: 2rem;
+			padding: 1rem;
+		}
+
+		p {
+			font-size: 1.2rem;
+			color: $textColor;
+			margin-bottom: 3rem;
+		}
+	}
+
+	.rightPic {
+		margin-top: 2rem;
+
+		@include desktopView {
+			grid-area: right;
+		}
+		.pic {
+			@include desktopView {
+				position: relative;
+				top: 35%;
+				transform: translateY(-50%);
+			}
+		}
+	}
 }
