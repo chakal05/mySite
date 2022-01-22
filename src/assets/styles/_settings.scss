@@ -3,7 +3,7 @@ $titleSize: 3rem;
 $textColor:rgb(107, 107, 107);
 
 @mixin phoneView {
-	@media (max-width: 3200px) {
+	@media (max-width: 320px) {
 		@content;
 	}
 }
