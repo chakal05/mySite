@@ -1,70 +1,107 @@
 import React from 'react';
-import '../assets/styles/projects.scss';
-import sasmiya from '../assets/sasmiya.png';
-import kerja from '../assets/kerja.png';
-import currency from '../assets/currency.png';
-import Paper from '@material-ui/core/Paper';
-import Card from '../components/card';
+import currencyConverter from '../assets/Currency Converter.png';
+import searchNews from '../assets/searchNews.png';
+import sams from '../assets/Sams.png';
+import platsBanken from '../assets/platsbankenClone.png';
 
-const items = [
+let projectsData = [
 	{
-		id: 1,
-		pic: sasmiya,
-		title: 'Sasmiya',
-		text: `On this website, visitors can search worldwide
-        news headline. For example, a user can type in "Bitcoin" 
-        and get related articles news. `,
-		gitLink: 'https://github.com/chakal05/coloc',
-		siteLink: 'https://affectionate-volhard-b9e5b2.netlify.app/',
+		bild: currencyConverter,
+		title: 'Exchange',
+		description:
+			'With the Dollar as base, this website allows users to convert to and from different scandinavian currencies.',
+		tools: ' React, Sass, Exchange rate Api',
+		githubLink: 'https://github.com/chakal05/currency_converter',
+		websiteLink: 'https://scancurr.netlify.app/'
+	},
+	{
+		bild: searchNews,
+		title: 'News ',
+		description:
+			'On this website, visitors can search worldwide news headline. For example, a user can type in "Bitcoin" and get related articles news.',
 		tools: 'React, Sass, NewsSearchApi',
+		githubLink: 'https://github.com/chakal05/newsSearch',
+		websiteLink: 'https://affectionate-volhard-b9e5b2.netlify.app/'
 	},
 	{
-		id: 2,
-		pic: kerja,
+		bild: sams,
+		title: 'Blocket minimal clone ',
+		description: 'This is a minimal clone of Blocket .  ',
+		tools: 'Nextjs, Tailwindcss, Typescript',
+		githubLink: 'https://github.com/chakal05/asas',
+		websiteLink: 'https://asas-7g8bffu0t-chakal05.vercel.app/'
+	},
+	{
+		bild: platsBanken,
 		title: 'Kerja',
-		text: `Kerja is a web application that is inspired by
-             the swedish job search application, called
-             "Platsbanken".`,
-		gitLink: 'https://github.com/chakal05/PolEmploiDjiboutien',
-		siteLink: 'https://nostalgic-spence-2231c5.netlify.app/',
+		description:
+			'Kerja is a web application that is inspired by the swedish job search application, called "Platsbanken.',
 		tools: 'React, Redux, Sass, Firebase',
-	},
-	{
-		id: 3,
-		pic: currency,
-		title: 'Currency converter',
-		text: `  With the Dollar as base, this website allows
-                     users to convert to and from different
-                     scandinavian currencies.`,
-		gitLink: 'https://github.com/chakal05/scanCurr-Dev',
-		siteLink: 'https://scancurr.netlify.app',
-		tools: 'React, Sass, Exchange rate Api',
-	},
+		githubLink: 'https://github.com/chakal05/platsbanken_clone',
+		websiteLink: 'https://nostalgic-spence-2231c5.netlify.app/'
+	}
 ];
 
-export default function Projects(props) {
+const projects = () => {
 	return (
-		<div className='projectsPage'>
-			<div className='pageTitle'>
-				<h1> Past projects </h1>
-			</div> 
+		<div className='mb-12'>
+			<div className='my-[1rem] p-2'>
+				<p className='text-4xl lg:text-5xl text-gray-700 '> Projects </p>
+			</div>
 
-			<Paper elevation={5} className='projectsContainer'>
-				
-					{items.map((item) => (
-						<li key={item.id} style={{ margin: '1rem' }}>
-							<Card
-								pic={item.pic}
-								title={item.title}
-								text={item.text}
-								gitLink={item.btnLink}
-								siteLink={item.siteLink}
-								tools={item.tools}
-							/>
-						</li>
-					))}
-				
-			</Paper>
+			<div className=''>
+				<ul className='p-3'>
+					{projectsData.map((item, index) => {
+						return (
+							<li key={index} className='md:w-4/5 mx-auto my-12 md:p-3'>
+								<div className='md:flex '>
+									<div className='md:basis-2/5'>
+										<img
+											src={item.bild}
+											alt=''
+											className='w-9/12 mx-auto rounded md:h-full md:w-full '
+										/>
+									</div>
+									<div className='w-11/12 mx-auto p-2 md:ml-3  md:pt-0  '>
+										<p className='text-xl text-blue-900 font-bold '>
+											{' '}
+											{item.title}{' '}
+										</p>
+										<p className='mt-3 '> {item.description} </p>
+										<p className='mt-1  '>
+											{' '}
+											Tools: <span className='font-semibold'>
+												{item.tools}
+											</span>{' '}
+										</p>
+										<div className='mt-3'>
+											<a
+												href={item.githubLink}
+												target='_blank'
+												rel='noreferrer'
+												className='bg-blue-900 text-white mr-1 p-2 rounded  '>
+												{' '}
+												See on Github{' '}
+											</a>
+											<a
+												href={item.websiteLink}
+												target='_blank'
+												rel='noreferrer'
+												className='bg-blue-900 text-white  p-2 rounded  '>
+												{' '}
+												Visit website{' '}
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						);
+					})}
+				</ul>
+			</div>
+
 		</div>
 	);
-}
+};
+
+export default projects;
