@@ -29,7 +29,7 @@ let projectsData = [
 		description: 'This is a minimal clone of Blocket with NextAuth login. ',
 		tools: 'Nextjs, Tailwindcss, Typescript, NextAuth, MongoDb',
 		githubLink: 'https://github.com/chakal05/asas',
-		websiteLink: 'https://asas-7g8bffu0t-chakal05.vercel.app/'
+		websiteLink: 'https://asas-vqai.vercel.app/'
 	},
 	{
 		bild: platsBanken,
